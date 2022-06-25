@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>Expense Tracker</title>
+        <link rel="stylesheet" href="style.css">
+        <h1>Expense Tracker</h1>
+    </head>
+    <body>
+        <form onsubmit="savetolocalstorage(event)">
+        <label id="ChooseAmount">Choose Expense Amount</label>
+        <input id="number" type="number" placeholder="Enter Amount"><br>
+        <label id="ChooseDescription">Choose Description</label>
+        <select id="description">
+            <option value="" disabled selected hidden>Choose description</option>
+            <option value="Fuel">Fuel</option>
+            <option value="Rent">Rent</option>
+            <option value="HouseHold">HouseHold</option>
+            <option value="SchoolFees">SchoolFees</option>
+            <option value="Electricity">Electricity</option>
+            <option value="Gas">Gas</option>
+
+          </select><br>
+        <label id="ChooseMonth">Choose Month</label>
+        <select id="month">
+            <option value="" disabled selected hidden>Choose Month</option>
+            
+            <option value="Janaury">Janaury</option>
+            <option value="Febraury">Febraury</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+            </select>
+            <br><br>
+            
+            <button id="submit" type="submit">Add Expenses</button>
+            </form>
+            <fieldset>
+                <legend>Editing And Deleting Expenses</legend>
+            
+                
+                <ul id='list of users'></ul>
+                
+               
+               
+    
+            </fieldset>
+            <script src="expense.js"></script>
+    </body>
+</html>
